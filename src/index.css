@@ -1,13 +1,151 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Bruno+Ace&family=Bruno+Ace+SC&family=Kanit:wght@300;700&family=Pathway+Extreme&family=Piazzolla:wght@200;300;400;900&family=Prompt:wght@500&family=Shantell+Sans:wght@500&family=Ubuntu:wght@400;700&family=Unbounded:wght@500&display=swap');
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: beige;
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-family: 'Aboreto', cursive;
+font-family: 'Bruno Ace', cursive;
+font-family: 'Bruno Ace SC', cursive;
+font-family: 'Kanit', sans-serif;
+font-family: 'Pathway Extreme', sans-serif;
+font-family: 'Piazzolla', serif;
+font-family: 'Prompt', sans-serif;
+font-family: 'Shantell Sans', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Unbounded', cursive;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.mainDiv{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  box-shadow: 1px 1px 20px cyan;
+  /* border: 2px solid blue; */
+  border-radius: 20px;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  width: 400px;
+  height: 500px;
+}
+
+h1{
+  border-radius: 5px;
+  background-color: rgba(198, 17, 243, 0.678);
+}
+
+
+
+.container input{
+  border: none;
+  /* text-decoration: underline; */
+  /* border: 2px solid cyan; */
+  border-bottom: 2px solid blueviolet;
+  border-left: 2px solid blueviolet;
+
+  /* background-color: black; */
+  /* box-shadow: 0px 0px 5px gold; */
+  border-radius: 10px;
+  outline: none;
+  width: 70%;
+  height: 38px;
+  margin: 0px 14px;
+  margin-bottom: 30px;
+  padding: 6px;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container button{
+  box-shadow: 1px 1px 20px rgba(172, 255, 47, 0.801);
+  border: none;
+  width: 42px;
+  padding: 5px;
+  margin: 4px;
+  font-size: 28px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.container button:hover{
+  background-color: greenyellow;
+}
+
+.todo_list{
+  /* box-shadow: 0px 0px 10px whitesmoke; */
+  border-bottom: 2px solid rgb(178, 189, 247);
+  border-right: 2px solid rgb(178, 189, 247);
+  border-bottom-right-radius: 20px;
+  border-radius: 5px;
+  float: left;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.todo_list button{
+  
+  background-color: whitesmoke;
+  box-shadow: inset 0px 0px 7px rgba(255, 0, 0, 0.801);
+  color: red;
+  border: none;
+  width: 25px;
+  padding: 3px;
+  margin: 5px 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.todo_list button:hover{
+  color: black;
+  background-color: red;
+}
+
+.todo_list li{
+  text-transform: capitalize;
+  list-style: none;
+  display: inline;
+  margin: 0px 10px;
+  /* font-weight: bold; */
+  font-size: 18px;
+  color: rgb(187, 253, 255);
+}
+
+@media (max-width:768px){
+  .container{
+    
+    /* margin: 10px auto;
+    padding: 10px; */
+    
+    width: 350px;
+    height: 600px;
+  }
 }
