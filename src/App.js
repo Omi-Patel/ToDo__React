@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import ToDo from './ToDo';
 import './index.css';
-// import AddIcon from '@material-ui/icons/Add';
+import Button from '@material-ui/core/Button';
+import Tooltip from '@material-ui/core/Tooltip';
+import AddIcon from '@material-ui/icons/Add';
+import Input from '@material-ui/core/Input';
+
 
 
 const App = () => {
@@ -46,10 +50,15 @@ const App = () => {
           <h1> ToDo List </h1>
           <br />
 
-          <input type='text' placeholder='Add Items' onChange={itemEvents}
+          {/* <input type='text' placeholder='Add Items' onChange={itemEvents}
             value={itemList}
-          />
-          <button onClick={listOfItem}> + </button>
+          /> */}
+
+          <Input type='text' placeholder="Add Items" onChange={itemEvents} value={itemList} inputProps={{ 'aria-label': 'description' }} className='ip' />
+
+          <Tooltip title="Add">
+          <Button className="add" onClick={listOfItem}> <AddIcon /> </Button>
+          </Tooltip>
 
           <ol>
             {/* <li>
