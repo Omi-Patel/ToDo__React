@@ -44,7 +44,6 @@ code {
 }
 
 .container{
-  box-shadow: 1px 1px 20px cyan;
   /* border: 2px solid blue; */
   border-radius: 20px;
   margin: 10px auto;
@@ -52,6 +51,19 @@ code {
   text-align: center;
   width: 400px;
   height: 500px;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+  box-shadow: 0px 0px 10px cyan;
+  }
+  50%{
+    box-shadow: 0px 0px 10px rgba(255, 0, 234, 0.904);
+  }
+  100%{
+    box-shadow: 1px 1px 15px rgb(0, 255, 136);
+  } 
 }
 
 h1{
@@ -85,12 +97,12 @@ h1{
 .container button{
   box-shadow: 1px 1px 20px rgba(172, 255, 47, 0.801);
   border: none;
-  width: 42px;
+  width: 40px;
   padding: 5px;
   margin: 4px;
   font-size: 28px;
   border-radius: 50%;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .container button:hover{
@@ -116,17 +128,18 @@ h1{
   box-shadow: inset 0px 0px 7px rgba(255, 0, 0, 0.801);
   color: red;
   border: none;
-  width: 25px;
+  /* display: ; */
+  /* width: 25px;
   padding: 3px;
-  margin: 5px 10px;
-  font-size: 18px;
-  border-radius: 50%;
-  font-weight: bold;
+  margin: 5px 10px; */
+  /* font-size: 16px; */
+  /* border-radius: 50%; */
+  /* font-weight: bold; */
 }
 
 .todo_list button:hover{
   color: black;
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.753);
 }
 
 .todo_list li{
