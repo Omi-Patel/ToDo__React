@@ -139,6 +139,10 @@ h1{
 
 @media (max-width:768px){
 
+  body{
+    height: 100vh;
+  }
+
   h1{
     font-weight: lighter;
   }
