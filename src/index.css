@@ -15,6 +15,10 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../public/images/bg\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
 
   font-family: 'Aboreto', cursive;
 font-family: 'Bruno Ace', cursive;
@@ -45,6 +49,8 @@ code {
 
 .container{
   /* border: 2px solid blue; */
+  /* opacity: 1; */
+  background-color: rgba(2, 2, 62, 0.218);
   border-radius: 20px;
   margin: 10px auto;
   padding: 10px;
